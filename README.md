@@ -9,6 +9,14 @@ A very lightweight library which serves the purpose of entering a 6 digit pix li
 
 How to use:
 ==============
+
+#### Clone it and include the module 
+```
+:sixdigitpinview
+```
+
+Not really got around uploading to maven :D
+
 Include it in the layout as follows:
 ```
 <com.wonderquill.sixdigitpinview.SixDigitPinView
