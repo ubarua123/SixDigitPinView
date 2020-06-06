@@ -1,0 +1,3 @@
+include ':sixdigitpinview'
+include ':app'
+rootProject.name = "Pin View Demo"
