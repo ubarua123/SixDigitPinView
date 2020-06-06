@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditText.Bordered" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!--<item name="android:textColorHint">@color/grey_3</item>
+        <item name="hintTextColor">@color/grey_3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="hintTextAppearance">@style/TextAppearance.HintText</item>
+        <item name="android:layout_height">@dimen/textinputlayout_height</item>-->
+        <item name="android:colorControlActivated">?attr/colorAccent</item>
+        <item name="android:colorControlHighlight">?attr/colorAccent</item>
+        <item name="android:colorControlNormal">?attr/colorAccent</item>
+        <item name="boxStrokeColor">@color/edit_text_box_border</item>
+        <!--        <item name="android:textAppearance">@style/TextAppearance.TextView.Black.15sp</item>-->
+    </style>
+</resources>
