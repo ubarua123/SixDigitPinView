@@ -13,6 +13,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:show_reset_button="false"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button

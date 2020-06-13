@@ -6,6 +6,7 @@ import android.text.InputFilter
 import android.text.InputType
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.EditText
 import android.widget.LinearLayout
 import com.wonderquill.sixdigitpinview.databinding.PinInputLayoutBinding
@@ -32,7 +33,11 @@ class SixDigitPinView : LinearLayout {
     private fun init(attrs: AttributeSet?) {
         attrs?.let {
 
-            // We really don't care for the attribute set
+            var showReset = false
+            context.getStyledAttributes(it, R.styleable.SixDigitPinView) {
+                showReset = getBoolean(R.styleable.SixDigitPinView_show_reset_button, false)
+            }
+
             binding = PinInputLayoutBinding.inflate(LayoutInflater.from(context), this, true)
 
             editTextList.add(binding.et0.apply {
@@ -166,15 +171,28 @@ class SixDigitPinView : LinearLayout {
                         selectedIndex = 5
                 }
             })
-        }
 
-        binding.reset.setOnClickListener {
-            editTextList.forEach {
-                it.text.clear()
+            if (showReset) {
+                binding.reset.visibility = View.VISIBLE
+                binding.reset.setOnClickListener {
+                    reset()
+                }
             }
-            editTextList[0].requestFocus()
-            selectedIndex = 0
+            else {
+                binding.reset.visibility = View.GONE
+            }
+        } // attr end
+    }
+
+    /**
+     * Resets the views to empty and changes focus to the first field
+     */
+    fun reset() {
+        editTextList.forEach {
+            it.text.clear()
         }
+        editTextList[0].requestFocus()
+        selectedIndex = 0
     }
 
     fun getEnteredPin(): String {

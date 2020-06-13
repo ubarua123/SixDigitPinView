@@ -25,19 +25,30 @@ android {
     viewBinding {
         enabled = true
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "androidx.appcompat:appcompat:$rootProject.androidxAppCompat"
+
+
+    implementation "com.google.android.material:material:$rootProject.androidxMaterialIo"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidxContstraintLayout"
+    implementation "androidx.constraintlayout:constraintlayout-solver:$rootProject.androidxContstraintLayout"
+    implementation "androidx.core:core-ktx:$rootProject.androidKtxExtension"
+
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
-    implementation "com.google.android.material:material:1.3.0-alpha01"
-    implementation "androidx.appcompat:appcompat:1.1.0"
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
 }
