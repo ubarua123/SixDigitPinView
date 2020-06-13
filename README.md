@@ -65,4 +65,9 @@ pinView.reset()
 ```
 to reset the entered pin
 
+To Enable the built in reset button, use
+`app:show_reset_button=true`
+
+It is disabled by default.
+
 Feel free to fork it, clone it, edit it!
