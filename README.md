@@ -1,5 +1,5 @@
   # SixDigitPinView
-A very lightweight library which serves the purpose of entering a 6 digit pix like OTP from an SMS. Uses latest Material IO and theming is picked up from whatever is set in the app
+A very lightweight library which serves the purpose of entering a 6 digit pix like OTP from an SMS. Uses latest Material IO and theming is picked up from whatever is set in the app.
 
 
 <img src="https://media.giphy.com/media/Q9vm6ROIAAAZvn6F6I/source.gif" data-canonical-src="https://media.giphy.com/media/Q9vm6ROIAAAZvn6F6I/source.gif" width="200" height="400" />
@@ -54,5 +54,20 @@ if(it.itemCount> 0)
         pinView.pastePin(it.getItemAt(0).text.toString())
 }
 ```
+
+You can enable or disable the reset button
+------------------------------------------
+
+You can use your own button and call 
+
+```
+pinView.reset()
+```
+to reset the entered pin
+
+To Enable the built in reset button, use
+`app:show_reset_button=true`
+
+It is disabled by default.
 
 Feel free to fork it, clone it, edit it!
