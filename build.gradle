@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.0.0"
+        classpath 'com.android.tools.build:gradle:4.0.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -15,10 +15,10 @@ buildscript {
 }
 
 ext {
-    androidKtxExtension='1.3.0'
-    androidxAppCompat="1.1.0"
-    androidxMaterialIo="1.3.0-alpha01"
-    androidxContstraintLayout="1.1.3"
+    androidKtxExtension= '1.3.1'
+    androidxAppCompat= '1.2.0'
+    androidxMaterialIo= '1.3.0-alpha02'
+    androidxContstraintLayout= '2.0.1'
 
 }
 

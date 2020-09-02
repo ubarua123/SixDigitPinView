@@ -5,146 +5,158 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:baselineAligned="false"
-        android:orientation="horizontal"
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="til_0,til_1,til_2, til_3, til_4, til_5"
+        app:flow_horizontalGap="5dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_0"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:helperTextEnabled="false"
+        app:hintEnabled="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_0"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:helperTextEnabled="false"
-            app:hintEnabled="false">
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:maxLength="1"
+            tools:text="1" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_0"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:cursorVisible="false"
-                android:gravity="center"
-                android:importantForAccessibility="no"
-                android:maxLength="1"
-                tools:text="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_1"
+        style="@style/EditText.Bordered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:helperTextEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toEndOf="@+id/flow2"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/EditText.Bordered"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_1"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            app:helperTextEnabled="false"
-            app:hintEnabled="false">
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:maxLength="1"
+            tools:text="2" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_1"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:cursorVisible="false"
-                android:gravity="center"
-                android:importantForAccessibility="no"
-                android:maxLength="1"
-                tools:text="2" />
-        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_2"
+        style="@style/EditText.Bordered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:helperTextEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toEndOf="@+id/flow2"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/EditText.Bordered"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_2"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            app:helperTextEnabled="false"
-            app:hintEnabled="false">
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:maxLength="1"
+            tools:text="3" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_2"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:cursorVisible="false"
-                android:gravity="center"
-                android:importantForAccessibility="no"
-                android:maxLength="1"
-                tools:text="3" />
-        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_3"
+        style="@style/EditText.Bordered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:helperTextEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toEndOf="@+id/flow2"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/EditText.Bordered"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_3"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            app:helperTextEnabled="false"
-            app:hintEnabled="false">
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:maxLength="1"
+            tools:text="4" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_3"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:cursorVisible="false"
-                android:gravity="center"
-                android:importantForAccessibility="no"
-                android:maxLength="1"
-                tools:text="4" />
-        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_4"
+        style="@style/EditText.Bordered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:helperTextEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toEndOf="@+id/flow2"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/EditText.Bordered"
-
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_4"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            app:helperTextEnabled="false"
-            app:hintEnabled="false">
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:maxLength="1"
+            tools:text="5" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_4"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:cursorVisible="false"
-                android:gravity="center"
-                android:importantForAccessibility="no"
-                android:maxLength="1"
-                tools:text="5" />
-        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_5"
+        style="@style/EditText.Bordered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:helperTextEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toEndOf="@+id/flow2"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/EditText.Bordered"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_5"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            app:helperTextEnabled="false"
-            app:hintEnabled="false">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_5"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:cursorVisible="false"
-                android:gravity="center"
-                android:importantForAccessibility="no"
-                android:maxLength="1"
-                tools:text="6" />
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:maxLength="1"
+            tools:text="6" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/reset"
-        style="@style/Widget.MaterialComponents.Button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -152,5 +164,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@id/flow2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

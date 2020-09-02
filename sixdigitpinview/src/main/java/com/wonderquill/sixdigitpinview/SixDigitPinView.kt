@@ -11,10 +11,14 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import com.wonderquill.sixdigitpinview.databinding.PinInputLayoutBinding
 
+/**
+ * A very lightweight library which serves the purpose of entering a 6 digit pix like OTP from an SMS.
+ * Uses latest Material IO and theme is picked up from whatever is set in the app.
+ */
 class SixDigitPinView : LinearLayout {
 
     private lateinit var binding: PinInputLayoutBinding
-    var selectedIndex: Int = 0
+    private var selectedIndex: Int = 0
     private val editTextList: ArrayList<EditText> = arrayListOf()
 
     constructor(context: Context) : super(context)
